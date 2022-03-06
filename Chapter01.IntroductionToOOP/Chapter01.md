@@ -1,0 +1,1 @@
+This chapter gives basic concepts of object-oriented programming.
