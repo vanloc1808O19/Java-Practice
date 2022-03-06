@@ -5,7 +5,7 @@
 
 import javax.swing.*;
 
-class Ch2Sample1 {
+public class Ch2Sample1 {
     public static void main(String[] args) {
         JFrame myWindow;
 
