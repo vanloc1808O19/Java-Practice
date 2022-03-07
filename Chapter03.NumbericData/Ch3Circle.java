@@ -12,9 +12,11 @@ class Ch3Circle {
         String radiusStr = JOptionPane.showInputDialog(null, "Enter radius: ");
         double radius = Double.parseDouble(radiusStr);
 
+        DecimalFormat df = new DecimalFormat("0.000");
+
         double area = PI * radius * radius;
         double circumference = 2 * PI * radius;
 
-        JOptionPane.showMessageDialog(null, "Given radius: " + radius + "\n" + "Area: " + area + "\n" + "Circumference: " + circumference);
+        JOptionPane.showMessageDialog(null, "Given radius: " + radius + "\n" + "Area: " + df.format(area) + "\n" + "Circumference: " + df.format(circumference));
     }
 }
