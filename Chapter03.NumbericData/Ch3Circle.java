@@ -15,8 +15,6 @@ class Ch3Circle {
         double area = PI * radius * radius;
         double circumference = 2 * PI * radius;
 
-        JOptionPane.showMessageDialog(null, "Given radius: " + radius + "\n");
-        JOptionPane.showMessageDialog(null, "Area: " + area + "\n");
-        JOptionPane.showMessageDialog(null, "Circumference: " + circumference + "\n");
+        JOptionPane.showMessageDialog(null, "Given radius: " + radius + "\n" + "Area: " + area + "\n" + "Circumference: " + circumference);
     }
 }
