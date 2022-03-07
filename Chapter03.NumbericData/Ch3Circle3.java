@@ -6,7 +6,6 @@ import java.text.DecimalFormat;
 */
 
 import java.util.*;
-import java.text.*;
 
 public class Ch3Circle3 {
     public static void main(String[] args) {
