@@ -173,4 +173,22 @@ public class Ch7Fraction {
 
         return quot;
     }
+
+    public static Ch7Fraction min(Ch7Fraction f1, Ch7Fraction f2) {
+        // convert to decimals and compare
+
+        double d1 = f1.decimal();
+        double d2 = f2.decimal();
+
+        if (d1 <= d2) {
+            return f1;
+        } else {
+            return f2;
+        }
+    } 
+
+    private double decimal() {
+        // return the decimal equivalent
+        return (double) getNumerator() / (double) getDenominator();
+    }
 }
