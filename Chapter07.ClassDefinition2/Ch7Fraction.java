@@ -3,9 +3,26 @@ public class Ch7Fraction {
 
     private int denominator;
 
+    // default constructor
+    public Ch7Fraction() {
+        setNumerator(0);
+        setDenominator(1);
+    }
+
     public Ch7Fraction(int n, int d) {
         numerator = n;
         denominator = d;
+    }
+
+    public Ch7Fraction (int number) {
+        numerator = number;
+        denominator = 1;
+    }
+
+    // copy constructor
+    public Ch7Fraction (Ch7Fraction f) {
+        numerator = f.getNumerator();
+        denominator = f.getDenominator();
     }
 
     public int getNumerator() {
