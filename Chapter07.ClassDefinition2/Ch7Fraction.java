@@ -55,7 +55,7 @@ public class Ch7Fraction {
         return getNumerator() + "/" + getDenominator();
     }
 
-    private int gcd_euclid(int m, int n) {
+    private static int gcd_euclid(int m, int n) {
         int r = n % m;
 
         while (r != 0) {
@@ -71,7 +71,7 @@ public class Ch7Fraction {
         int num = getNumerator();
         int den = getDenominator();
 
-        int gcd = gcd_euclid(num, den);
+        int gcd = Ch7Fraction.gcd_euclid(num, den);
 
         Ch7Fraction simp = new Ch7Fraction(num / gcd, den / gcd);
 
