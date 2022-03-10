@@ -75,6 +75,14 @@ public class Ch7Fraction {
         return sum;
     }
 
+    public Ch7Fraction add(int n) {
+        Ch7Fraction nf = new Ch7Fraction(n, 1);
+
+        Ch7Fraction sum = add(nf);
+
+        return sum;
+    }
+
     public Ch7Fraction subtract(Ch7Fraction fr) {
         int a, b, c, d;
 
@@ -87,6 +95,14 @@ public class Ch7Fraction {
         Ch7Fraction diff = new Ch7Fraction(a * d - b * c, b * d);
 
         diff = diff.simply();
+
+        return diff;
+    }
+
+    public Ch7Fraction subtract(int n) {
+        Ch7Fraction nf = new Ch7Fraction(n, 1);
+
+        Ch7Fraction diff = subtract(nf);
 
         return diff;
     }
@@ -107,6 +123,14 @@ public class Ch7Fraction {
         return prod;
     }
 
+    public Ch7Fraction multiply(int n) {
+        Ch7Fraction nf = new Ch7Fraction(n, 1);
+
+        Ch7Fraction prod = multiply(nf);
+
+        return prod;
+    }
+
     public Ch7Fraction divide(Ch7Fraction fr) {
         int a, b, c, d;
 
@@ -119,6 +143,14 @@ public class Ch7Fraction {
         Ch7Fraction quot = new Ch7Fraction(a * d, b * c);
 
         quot = quot.simply();
+
+        return quot;
+    }
+
+    public Ch7Fraction divide(int n) {
+        Ch7Fraction nf = new Ch7Fraction(n, 1);
+
+        Ch7Fraction quot = divide(nf);
 
         return quot;
     }
