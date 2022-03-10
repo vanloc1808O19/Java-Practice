@@ -7,6 +7,8 @@ public class Ch7Fraction {
     public Ch7Fraction() {
         setNumerator(0);
         setDenominator(1);
+
+        // this (0,1);
     }
 
     public Ch7Fraction(int n, int d) {
