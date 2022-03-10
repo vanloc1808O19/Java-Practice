@@ -59,5 +59,67 @@ public class Ch7Fraction {
         return simp;
     }
 
-    
+    public Ch7Fraction add(Ch7Fraction fr) {
+        int a, b, c, d;
+
+        a = this.getNumerator();
+        b = this.getDenominator();
+
+        c = fr.getNumerator();
+        d = fr.getDenominator();
+
+        Ch7Fraction sum = new Ch7Fraction(a * d + b * c, b * d);
+
+        sum = sum.simply();
+
+        return sum;
+    }
+
+    public Ch7Fraction subtract(Ch7Fraction fr) {
+        int a, b, c, d;
+
+        a = this.getNumerator();
+        b = this.getDenominator();
+
+        c = fr.getNumerator();
+        d = fr.getDenominator();
+
+        Ch7Fraction diff = new Ch7Fraction(a * d - b * c, b * d);
+
+        diff = diff.simply();
+
+        return diff;
+    }
+
+    public Ch7Fraction multiply(Ch7Fraction fr) {
+        int a, b, c, d;
+
+        a = this.getNumerator();
+        b = this.getDenominator();
+
+        c = fr.getNumerator();
+        d = fr.getDenominator();
+
+        Ch7Fraction prod = new Ch7Fraction(a * c, b * d);
+
+        prod = prod.simply();
+
+        return prod;
+    }
+
+    public Ch7Fraction divide(Ch7Fraction fr) {
+        int a, b, c, d;
+
+        a = this.getNumerator();
+        b = this.getDenominator();
+
+        c = fr.getNumerator();
+        d = fr.getDenominator();
+
+        Ch7Fraction quot = new Ch7Fraction(a * d, b * c);
+
+        quot = quot.simply();
+
+        return quot;
+    }
 }
