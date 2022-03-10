@@ -35,4 +35,29 @@ public class Ch7Fraction {
     public String toString() {
         return getNumerator() + "/" + getDenominator();
     }
+
+    private int gcd_euclid(int m, int n) {
+        int r = n % m;
+
+        while (r != 0) {
+            n = m;
+            m = r;
+            r = n % m;
+        }
+
+        return m;
+    }
+
+    public Ch7Fraction simply() {
+        int num = getNumerator();
+        int den = getDenominator();
+
+        int gcd = gcd_euclid(num, den);
+
+        Ch7Fraction simp = new Ch7Fraction(num / gcd, den / gcd);
+
+        return simp;
+    }
+
+    
 }
