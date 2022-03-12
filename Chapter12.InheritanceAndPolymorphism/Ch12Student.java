@@ -2,7 +2,7 @@
  * Chapter 13 Sample Program: Student
  */
 
-public class Ch12Student {
+abstract class Ch12Student {
     protected final static int NUM_OF_TESTS = 3;
 
     protected String name;
@@ -40,4 +40,6 @@ public class Ch12Student {
     public void setTestScore(int testNumber, int testScore) {
         test[testNumber - 1] = testScore;
     }
+
+    abstract public void computeCourseGrade();
 }
