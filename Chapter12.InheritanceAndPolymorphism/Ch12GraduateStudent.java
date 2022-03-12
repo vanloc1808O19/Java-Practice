@@ -1,4 +1,4 @@
-public class Ch13GraduateStudent extends Ch13Student {
+public class Ch12GraduateStudent extends Ch12Student {
     public void computeCourseGrade() {
         int total = 0;
 

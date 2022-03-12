@@ -2,7 +2,7 @@
  * Chapter 13 Sample Program: Student
  */
 
-public class Ch13Student {
+public class Ch12Student {
     protected final static int NUM_OF_TESTS = 3;
 
     protected String name;
@@ -11,11 +11,11 @@ public class Ch13Student {
 
     protected String courseGrade;
 
-    public Ch13Student() {
+    public Ch12Student() {
         this("No name");
     }
 
-    public Ch13Student(String studentName) {
+    public Ch12Student(String studentName) {
         name = studentName;
         test = new int[NUM_OF_TESTS];
         courseGrade = "*****";
