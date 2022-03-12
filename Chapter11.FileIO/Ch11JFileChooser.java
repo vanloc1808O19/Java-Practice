@@ -1,5 +1,5 @@
 /**
- * Chapter 12 Sample Program: Illustrate the use of the JFileChooser and File classes. 
+ * Chapter 11 Sample Program: Illustrate the use of the JFileChooser and File classes. 
  */
 
 import java.io.*;
